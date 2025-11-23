@@ -21,22 +21,22 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'com.github.johnrengelman.shadow'
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(17) // Mojang ships Java 8 to end users, so your mod should target Java 8.
+java.toolchain.languageVersion = JavaLanguageVersion.of(21) // Mojang ships Java 21 to end users starting in 1.20.5, so mods should target Java 21.
 
 String baseVersion = "1.2"
 if (!"release".equalsIgnoreCase(System.getProperty("target"))) {
     baseVersion += "-" + Util.GitRevision()
 }
-version = "1.20.1-forge-" + baseVersion
+version = "1.21.1-forge-" + baseVersion
 group = "trackapi" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "TrackAPI"
 
 neoForge {
-    version = "20.4.251"
+    version = "21.1.176"
 
     parchment {
-        mappingsVersion = "2024.04.14"
-        minecraftVersion = "1.20.4"
+        mappingsVersion = "2024.11.17"
+        minecraftVersion = "1.21.1"
     }
 
     // Default run configurations.
