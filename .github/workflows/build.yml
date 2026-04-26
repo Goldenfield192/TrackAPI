@@ -31,5 +31,5 @@ jobs:
               run: rm /home/runner/.gradle/daemon/6.9/publish_key
             - uses: actions/upload-artifact@v6
               with:
-                name: UniversalModCore-${{ env.ref }}
-                path: build/libs/UniversalModCore-*.jar
+                name: TrackAPI-${{ env.ref }}
+                path: build/libs/TrackAPI-*.jar
