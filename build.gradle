@@ -52,7 +52,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                examplemod {
+                trackapi {
                     source sourceSets.main
                 }
             }
@@ -68,7 +68,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                examplemod {
+                trackapi {
                     source sourceSets.main
                 }
             }
@@ -83,10 +83,10 @@ minecraft {
             // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
 
-            args '--mod', 'examplemod', '--all', '--output', file('src/generated/resources/')
+            args '--mod', 'trackapi', '--all', '--output', file('src/generated/resources/')
 
             mods {
-                examplemod {
+                trackapi {
                     source sourceSets.main
                 }
             }
